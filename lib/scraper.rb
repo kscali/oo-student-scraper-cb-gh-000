@@ -24,7 +24,8 @@ class Scraper
     doc = Nokogiri::HTML(profile_url)
     social_links = []
     
-    doc.css(div.social-icon-container)
+    doc.css(div.social-icon-container a).each do |social|
+      
     
   end
 
