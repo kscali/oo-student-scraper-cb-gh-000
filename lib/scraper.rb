@@ -25,7 +25,7 @@ class Scraper
     social_links = []
     
     doc.css(div.social-icon-container a).each do |social|
-      
+      twitter_link = "#{social.attr('href')}"
     
   end
 
