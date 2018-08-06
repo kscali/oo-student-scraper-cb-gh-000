@@ -8,7 +8,7 @@ class Scraper
     doc = Nokogiri:HTML(index_url)
     students = []
     
-    docs.css(.student-card)
+    docs.css(div.roster)
     name = students.css(.student-name).map {|name| name.text}.compact
   
   end
