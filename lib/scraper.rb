@@ -9,7 +9,7 @@ class Scraper
     students = []
     
     docs.css(div.roster-cards-container).each do |card|
-    name = students.css(.student-name).map {|name| name.text}.compact
+      card.css(.student-name a).map {|name| name.text}.compact
   
   end
 
