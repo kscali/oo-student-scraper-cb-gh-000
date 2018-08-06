@@ -8,6 +8,7 @@ class Scraper
     doc = Nokogiri:HTML(index_url)
     students = docs.css(.student-card)
     
+    
   end
 
   def self.scrape_profile_page(profile_url)
